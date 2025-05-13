@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .plus{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 main-menu-bg">
+                <div class="main-menu">
+                    <img src="./images/Suchitra.jpg" alt="My Profile">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="./about-me.html">About me</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./testmonials.html">Testmonials</a></li>
+                        <li><a href="./contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 main-text-bg">
+                <div class="main-text">
+                    <h1 class="title">About me</h1>
+                    <div class="pri-text">
+                        <h2>I'm <span>Kodali Suchitra Kamala</span>,Junior Web Developer</h2>
+                        <p>I am Artificial Intelligence and Machine Learning student.
+                            I had Technical Skills of Python,HTML,CSS,JavaScript,SQL,
+                            Data Scientist and Skills of Communication,Problem Solving,
+                            Critical Thinking,Time Management,Planning,Leadership.</p>
+                    </div>
+                    <div class="row">
+                        <!-- Section 1 -->
+                        <div class="col-6">
+                            <div class="exp">
+                                <div class="row">
+                                    <div class="col-5" style="border-right: 1px dotted #ffffff;">
+                                        <h3><span class="countfect" data-num="3">0</span><span class="plus"><sup>+</sup></span></h3>
+                                        <p>Years of Experience</p>
+                                        <div style="border-bottom: 1px dotted #ffffff;margin-top: 12px;"></div>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3><span class="countfect" data-num="10">0</span><span class="plus"><sup>+</sup></span></h3>
+                                        <p>Projects Done</p>
+                                        <div style="border-bottom: 1px dotted #ffffff;margin-top: 12px;"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5" style="border-right: 1px dotted #ffffff;">
+                                        <h3><span class="countfect" data-num="50">0</span><span class="plus"><sup>+</sup></span></h3>
+                                        <p>Happy Clients</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3><span class="countfect" data-num="1">0</span><span class="plus">K</span></h3>
+                                        <p>Followers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section 2 -->
+                        <div class="col-6">
+                            <div class="exp-desc">
+                                <h2>What I Do?</h2>
+                                <div>
+                                    <i class="fa-solid fa-bezier-curve"></i>
+                                    <h4>Data Scientist</h4>
+                                    <p>I have used to work on data using Data Visualization , Machine Learning Models   
+                                        like Linear Regression using Python 
+                                        which makes interaction with the data and which makes the data or
+                                        a content looks attractive to user or a client.</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    <h4>Web Designer</h4>
+                                    <p>I have created a web page by using languages – HTML , CSS. By using
+                                        the above programming languages have created the web page “HOME PAGE”
+                                        to interact with users and attractive for the users. 
+                                        And this is user friendly.</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-people-group"></i>
+                                    <h4>Generative AI</h4>
+                                    <p>I have used to work on creating chatbots,games,Interface,etc using prompts.
+                                        Using the following platforms like-Poe.ai,Phatheon,Codepen we use to work on the prompts
+                                        I have made the projects like-Chatbot,Travel Budget,Tic-Tac-Tao using the above platfroms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-menu">
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./about-me.html"><i class="fa-solid fa-user active"></i></a></li>
+            <li><a href="./resume.html"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="./portfolio.html"><i class="fa-solid fa-desktop"></i></a></li>
+            <li><a href="./testmonials.html"><i class="fa-solid fa-bullhorn"></i></a></li>
+            <li><a href="./contacts.html"><i class="fa-solid fa-paper-plane"></i></a></li>
+        </ul>
+    </div>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <!-- count up jquery plugin -->
+    <script>
+        $('.counter').each(function(){
+            var $this = $(this),
+            countTo = $this.altr('data-count');
+            $({
+                countNum: $thid.text()
+            }).animate({
+                countNum: countTo
+            },{
+                duration: 3000,
+                easing: 'linear',
+                step: function(){
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            });
+        })
+    </script>
+    <script src="./countfect.min.js"></script>
+    <!-- <script>
+        let countNum = document.querySelectorAll('.counter');
+        
+        countNum.forEach((counter) => {
+            let dataCount = counter.getAttribute('data-count');
+            let update = function() {
+                let count = Number(counter.innerText);
+                count++;
+                if(count <= dataCount){
+                    counter.innerText = count;
+                }
+            }
+            setInterval(update, 10);
+        });
+    </script> -->
+</body>
+</html>
